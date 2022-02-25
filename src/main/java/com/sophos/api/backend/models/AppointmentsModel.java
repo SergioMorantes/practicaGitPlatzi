@@ -1,6 +1,7 @@
 package com.sophos.api.backend.models;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.util.Date;
 
 import javax.persistence.Entity;
@@ -35,11 +36,11 @@ public class AppointmentsModel implements Serializable {
     
     @Temporal(TemporalType.TIME)
     @JsonFormat(pattern = "dd/mm/yyyy", timezone = "America/Bogota")
-    private Date fecha;
+    private LocalDate fecha;
 
    
     @JsonFormat(pattern = "hh:mm", timezone = "America/Bogota")
-    private Date hora;
+    private LocalDate hora;
 
     @ManyToOne
     @JoinColumn(name = "id_test", foreignKey = @ForeignKey(name = "id_test"))
