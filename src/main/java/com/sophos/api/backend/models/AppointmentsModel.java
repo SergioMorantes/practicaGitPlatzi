@@ -2,7 +2,7 @@ package com.sophos.api.backend.models;
 
 import java.io.Serializable;
 import java.time.LocalDate;
-import java.util.Date;
+
 
 import javax.persistence.Entity;
 import javax.persistence.ForeignKey;
